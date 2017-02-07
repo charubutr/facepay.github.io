@@ -29,7 +29,7 @@ fileChooser.onchange = function (e) {
         // Guess photo orientation based on device orientation, works when taking picture, fails when loading from gallery
         if (navigator.userAgent.match(/mobile/i) && window.orientation === 0) {
             img.height = 250;
-            //img.className = 'rotate';
+            img.className = 'rotate';
         } else {
             img.width = 400;
         }
